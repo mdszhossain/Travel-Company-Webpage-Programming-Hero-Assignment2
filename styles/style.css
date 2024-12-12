@@ -12,6 +12,8 @@
 :root {
     --orange-default: #FF5400;
     --black-default: #424247;
+    --white-default: #FFFFFF;
+    --light-black: rgba(19, 19, 24, 0.50);
 }
 
 /* Logo */
@@ -53,6 +55,66 @@
     display: none;
 }
 
+/* Hero Section */
+.hero-section {
+    height: 800px;
+    width: 87%;
+    padding: 0px 60px;
+    border-radius: 20px;
+    background-image: url(../assets/images/group-1.png);
+    background-size: cover;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-heading, .hero-description {
+    text-align: center;
+    color: var(--white-default);
+}
+.hero-heading {
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+.hero-description {
+    font-weight: 400;
+    margin-bottom: 80px;
+}
+.hero-input-container, .hero-container {
+    width: 100%;
+}
+.hero-input {
+    height: 90px;
+    width: 70%;
+    background-color: rgb(255, 255, 255, 0.5);
+    margin: auto;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-bars {
+    padding: 20px 40px;
+    border: 0px;
+    border-radius: 15px;
+    color: var(--light-black);
+    font-weight: 400;
+}
+.hero-bars:focus {
+    outline: 0;
+}
+.hero-input form {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.orange-bar {
+    background-color: var(--orange-default);
+    color: var(--white-default);
+}
+.hero-input>form>input {
+    text-align: center;
+}
 
 /* (max-width: 480px) */
 @media (max-width: 480px) {
