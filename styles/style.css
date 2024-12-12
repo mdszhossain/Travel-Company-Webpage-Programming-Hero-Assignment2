@@ -6,5 +6,134 @@
     margin: 0px;
     padding: 0px;
     font-family: "Mulish", sans-serif;
+    font-weight: 900;
 }
 
+:root {
+    --orange-default: #FF5400;
+    --black-default: #424247;
+}
+
+/* Logo */
+.travel-word {
+    color: var(--orange-default);
+}
+.logo-text {
+    font-size: 2.25rem;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Nav Routing */
+.rout-text a {
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: var(--black-default);
+    font-weight: 400;
+}
+.rout-text li {
+    list-style-type: none;
+}
+.rout-text {
+    display: flex;
+    gap: 50px;
+}
+
+/* Nav Container */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+.hamburger-button {
+    display: none;
+}
+
+
+/* (max-width: 480px) */
+@media (max-width: 480px) {
+    /* nav-section */
+    .nav-container {
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 20px;
+    }
+    .rout-text {
+        display: none;
+    }
+    .logo-text {
+        font-size: 1.25rem;
+    }
+    .logo-icon {
+        width: 2.5em;
+    }
+    .hamburger {
+        border: 0px;
+        background-color: white;
+        font-size: 1.5rem;
+    }
+    .hamburger-button {
+        display: block;
+    }
+}
+
+/* (min-width: 481px) and (max-width: 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    /* nav-section */
+    .nav-container {
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 35px;
+    }
+    .rout-text {
+        display: none;
+    }
+    .logo-text {
+        font-size: 1.75rem;
+    }
+    .logo-icon {
+        width: 3em;
+    }
+    .hamburger {
+        border: 0px;
+        background-color: white;
+        font-size: 1.5rem;
+    }
+    .hamburger-button {
+        display: block;
+    }
+}
+
+/* (min-width: 769px) and (max-width: 1025px) */
+@media (min-width: 769px) and (max-width: 1025px) {
+    /* nav-section */
+    .hamburger-button {
+        display: none;
+    }
+    .logo-icon {
+        width: 3em;
+    }
+    .logo-text {
+        font-size: 1.75rem;
+    }
+    .rout-text {
+        gap: 30px;
+    }
+    .nav-container {
+        padding: 20px 20px;
+    }
+}
+
+/* (min-width: 1026px) and (max-width: 1200px) */
+@media (min-width: 1026px) and (max-width: 1200px) {
+    .hamburger-button {
+        display: none;
+    }
+    .nav-container {
+        padding: 20px 30px;
+    }
+}
