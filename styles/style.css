@@ -118,6 +118,46 @@
 .hero-bars:focus {
     outline: 0;
 }
+
+/* Popular Tour Section */
+.popular-tour-heading {
+    font-size: 2.25rem;
+    color: #131313;
+    margin-bottom: 20px;
+}
+
+.popular-tour-description {
+    font-weight: 400;
+    color: var(--black-default);
+    margin-bottom: 20px;
+    line-height: 1.625rem;
+}
+.des {
+    font-weight: 400;
+    color: var(--black-default);
+    margin-bottom: 20px;
+    line-height: 1.625rem;
+}
+.popular-tour {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+.read-more-btn {
+    background-color: var(--orange-default);
+    border: 0px;
+    border-radius: 10px;
+    padding: 15px 40px;
+    color: var(--white-default);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.popular-tour-list {
+    margin-left: 17px;
+}
+
+
 /* (max-width: 480px) */
 @media (max-width: 480px) {
     /* nav-section */
@@ -147,13 +187,14 @@
     /* Hero Section */
     .hero-input {
         height: 250px;
+        width: 90%;
     }
     .hero-input form {
         flex-direction: column;
     }
     .hero-bars {
         height: 50px;
-        width: 120px;
+        width: 220px;
     }
     .hero-heading {
         font-size: 2rem;
@@ -163,6 +204,47 @@
         margin: auto;
         margin-bottom: 40px;
     }
+    /* Popular Tour Section */
+    .popular-tour {
+        flex-direction: column;
+        align-items: center;
+    }
+    .popular-tour-image {
+        display: flex;
+        justify-content: center;
+    }
+    .popular-tour-image img {
+        width: 90%;
+    }
+    .popular-tour-description {
+        text-align: center;
+        width: 85%;
+    }
+    .popular-tour-heading {
+        text-align: center;
+    }
+    .popular-description {
+        display: flex;
+        justify-content: center;
+    }
+    .popular-tour-list {
+        width: 85%;
+        text-align: center;
+        margin: auto;
+    }
+    .popular-tour-list li {
+        list-style-type: none;
+    }
+    .des {
+        color: var(--orange-default);
+    }
+    .read-more {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
 }
 
 /* (min-width: 481px) and (max-width: 768px) */
@@ -210,6 +292,49 @@
         margin: auto;
         margin-bottom: 40px;
     }
+
+    /* Popular Tour Section */
+    .popular-tour {
+        flex-direction: column;
+        align-items: center;
+    }
+    .popular-tour-image {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .popular-tour-image img {
+        width: 90%;
+    }
+    .popular-tour-description {
+        text-align: center;
+        width: 95%;
+    }
+    .popular-tour-heading {
+        text-align: center;
+    }
+    .popular-description {
+        display: flex;
+        justify-content: center;
+    }
+    .popular-tour-list {
+        width: 85%;
+        text-align: center;
+        margin: auto;
+    }
+    .popular-tour-list li {
+        list-style-type: none;
+    }
+    .des {
+        color: var(--orange-default);
+    }
+    .read-more {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    
 }
 
 /* (min-width: 769px) and (max-width: 1025px) */
@@ -239,6 +364,23 @@
         height: 70px;
         width: 150px;
     }
+
+    /* Popular Tour Section */
+    .popular-tour {
+        flex-direction: column;
+    }
+    .popular-tour-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    .popular-tour-image img {
+        width: 85%;
+    }
+    .read-more {
+        margin-top: 40px;
+    }
 }
 
 /* (min-width: 1026px) and (max-width: 1200px) */
@@ -252,5 +394,15 @@
     /* Hero-Section */
     .hero-input {
         width: 95%;
+    }
+
+    /* Popular Tour Section */
+    .popular-tour-image {
+        display: flex;
+        justify-content: center;
+        width: 30%;
+    }
+    .popular-tour-image img {
+        width: 100%;
     }
 }
