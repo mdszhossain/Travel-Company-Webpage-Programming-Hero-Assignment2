@@ -157,6 +157,89 @@
     margin-left: 17px;
 }
 
+/* Destination section */
+.destination-heading {
+    font-size: 2.5rem;
+    color: #131313;
+    text-align: center;
+    margin-top: 100px;
+}
+.destination-description {
+    font-size: 1rem;
+    color: var(--black-default);
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.625rem;
+    margin-bottom: 100px;
+}
+.destination-image-container {
+    width: 85%;
+    margin: auto;
+}
+.dest-part1, .dest-part2, .dest-part3 {
+    width: 100%;
+    display: grid;
+}
+.maldives {
+    height: 300px;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('../assets/images/street-river.png') lightgray 50% / cover no-repeat;
+}
+.indonesia {
+    height: 300px;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('../assets/images/sea-beach.png') lightgray 50% / cover no-repeat;
+}
+.srilanka {
+    height: 300px;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('../assets/images/green-mountain.png') lightgray 50% / cover no-repeat;
+}
+.north-america {
+    height: 300px;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('../assets/images/mountain-temple.png') lightgray 50% / cover no-repeat;
+}
+.kashmir {
+    height: 300px;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('../assets/images/everast-mount.png') lightgray 50% / cover no-repeat;
+}
+.bangladesh {
+    height: 300px;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('../assets/images/river2-green.png') lightgray 50% / cover no-repeat;
+}
+.bandorban {
+    height: 300px;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('../assets/images/river-green.png') lightgray 50% / cover no-repeat;
+}
+
+.dest-part1 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.dest-part2 {
+    grid-template-columns: repeat(1, 1fr 1.5fr 0.8fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.dest-part3 {
+    grid-template-columns: repeat(1, 1.5fr 2fr);
+    gap: 20px;
+}
+.dest-heading {
+    font-size: 1.75rem;
+    color: var(--white-default);
+}
+.bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* (max-width: 480px) */
 @media (max-width: 480px) {
@@ -243,6 +326,27 @@
         justify-content: center;
         margin-bottom: 30px;
         margin-top: 20px;
+    }
+
+    /* Destination Section */
+    .dest-part1, .dest-part2, .dest-part3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .bg {
+        height: 150px;
+    }
+    .dest-heading {
+        font-size: 1.25rem;
+    }
+    .destination-heading {
+        font-size: 2rem;
+    }
+    .destination-description {
+        width: 80%;
+    }
+    .heading-dest {
+        display: flex;
+        justify-content: center;
     }
 
 }
@@ -333,6 +437,27 @@
         justify-content: center;
         margin-bottom: 30px;
         margin-top: 20px;
+    }
+
+    /* Destination Section */
+    .dest-part1, .dest-part2, .dest-part3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .bg {
+        height: 200px;
+    }
+    .dest-heading {
+        font-size: 1.25rem;
+    }
+    .destination-heading {
+        font-size: 2rem;
+    }
+    .destination-description {
+        width: 80%;
+    }
+    .heading-dest {
+        display: flex;
+        justify-content: center;
     }
     
 }
