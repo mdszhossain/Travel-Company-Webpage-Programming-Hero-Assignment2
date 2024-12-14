@@ -301,10 +301,10 @@
     .popular-tour-image {
         display: flex;
         justify-content: center;
-        width: 100%;
+        width: 80%;
     }
     .popular-tour-image img {
-        width: 90%;
+        width: 50%;
     }
     .popular-tour-description {
         text-align: center;
@@ -376,7 +376,7 @@
         margin-top: 60px;
     }
     .popular-tour-image img {
-        width: 85%;
+        width: 60%;
     }
     .read-more {
         margin-top: 40px;
