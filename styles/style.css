@@ -14,6 +14,7 @@
     --black-default: #424247;
     --white-default: #FFFFFF;
     --light-black: rgba(19, 19, 24, 0.50);
+    --dark-black: #131313;
 }
 
 /* Logo */
@@ -240,7 +241,64 @@
     justify-content: center;
     align-items: center;
 }
+.destination {
+    margin-bottom: 100px;
+}
 
+/* Choosing Section */
+.choosing-heading {
+    font-size: 2.5rem;
+    color: var(--dark-black);
+    margin-bottom: 15px;
+}
+.choosing-description {
+    color: var(--light-black);
+    font-weight: 400;
+    margin-bottom: 100px;
+    line-height: 1.625rem;
+}
+.choosing-heading, .choosing-description {
+    text-align: center;
+}
+.choose-section-heading {
+    font-size: 1.5rem;
+    color: var(--dark-black);
+    margin-bottom: 15px;
+}
+.choose-section-description {
+    font-weight: 400;
+    color: var(--light-black);
+    line-height: 1.6625rem;
+}
+.icon {
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+}
+.choose-section {
+    background-color: rgba(251, 181, 99, 0.05);
+    height: 280px;
+    width: 43%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+}
+.choose-upper-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.choose-lower-container {
+    display: flex;
+    justify-content: center;
+}
+.choose-section-2 {
+    background-color: rgba(41, 206, 246, 0.05);
+    border: 1px solid rgba(41, 206, 246, 0.20);
+}
 /* (max-width: 480px) */
 @media (max-width: 480px) {
     /* nav-section */
@@ -347,6 +405,25 @@
     .heading-dest {
         display: flex;
         justify-content: center;
+    }
+    /* Choose-Section */
+    .choose-section {
+        height: 320px;
+        width: 80%;
+    }
+    .choose-upper-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .choosing-heading {
+        font-size: 1.25rem;
+    }
+    .description-choose {
+        display: flex;
+        justify-content: center;
+    }
+    .choosing-description {
+        width: 80%;
     }
 
 }
@@ -459,6 +536,26 @@
         display: flex;
         justify-content: center;
     }
+
+    /* Choose-Section */
+    .choose-section {
+        height: 320px;
+        width: 80%;
+    }
+    .choose-upper-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .choosing-heading {
+        font-size: 2rem;
+    }
+    .description-choose {
+        display: flex;
+        justify-content: center;
+    }
+    .choosing-description {
+        width: 80%;
+    }
     
 }
 
@@ -506,6 +603,11 @@
     .read-more {
         margin-top: 40px;
     }
+
+    /* Choosing-section */
+    .choose-section {
+        width: 40%;
+    }
 }
 
 /* (min-width: 1026px) and (max-width: 1200px) */
@@ -529,5 +631,9 @@
     }
     .popular-tour-image img {
         width: 100%;
+    }
+
+    .choose-section {
+        width: 43%;
     }
 }
