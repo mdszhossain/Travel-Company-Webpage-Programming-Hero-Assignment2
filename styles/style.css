@@ -299,6 +299,68 @@
     background-color: rgba(41, 206, 246, 0.05);
     border: 1px solid rgba(41, 206, 246, 0.20);
 }
+
+/* newsletter-savingg */
+.newsletter-heading {
+    font-size: 1.5rem;
+    color: var(--dark-black);
+    margin-bottom: 10px;
+}
+.news-letter-form input {
+    display: block;
+}
+.newsletter-description {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    margin-bottom: 20px;
+}
+.newsletter hr {
+    margin-bottom: 20px;
+}
+.newsletter {
+    width: 90%;
+    border: 1px solid var(--orange-default);
+    padding: 50px;
+    border-radius: 20px;
+}
+.sub-text, .sub-mail {
+    border: 0;
+    background-color: rgba(19, 19, 24, 0.05);
+    padding: 10px;
+    width: 90%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 1.215rem;
+    font-weight: 400;
+}
+.sub-btn {
+    background-color: var(--orange-default);
+    color: var(--white-default);
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 20px;
+    width: 93%;
+    border: 0;
+}
+input:focus {
+    outline: 0;
+}
+.saving-container {
+    background-image: url('../assets/images/mountain-river.png');
+    height: 420px;
+    width: 45%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+.saving-newsletter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
 /* (max-width: 480px) */
 @media (max-width: 480px) {
     /* nav-section */
@@ -424,6 +486,27 @@
     }
     .choosing-description {
         width: 80%;
+    }
+
+    /* saving-newsletter */
+    .saving-newsletter {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .newsletter {
+        width: 65%;
+    }
+    .newsletter-container {
+        display: flex;
+        justify-content: center;
+    }
+    .saving-container {
+        width: 95%;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        margin-top: 20px;
     }
 
 }
@@ -556,6 +639,28 @@
     .choosing-description {
         width: 80%;
     }
+
+    /* saving-newsletter */
+    .saving-newsletter {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .newsletter {
+        width: 75%;
+    }
+    .newsletter-container {
+        display: flex;
+        justify-content: center;
+    }
+    .saving-container {
+        width: 90%;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+
     
 }
 
@@ -608,6 +713,29 @@
     .choose-section {
         width: 40%;
     }
+
+    /* saving-newsletter */
+    .saving-newsletter {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .newsletter {
+        width: 80%;
+    }
+    .newsletter-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .saving-container {
+        width: 95%;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+
 }
 
 /* (min-width: 1026px) and (max-width: 1200px) */
@@ -635,5 +763,14 @@
 
     .choose-section {
         width: 43%;
+    }
+
+    .newsletter {
+        width: 60%;
+    }
+    .saving-container {
+        width: 50%;
+        background-position: center;
+        border-radius: 20px;
     }
 }
